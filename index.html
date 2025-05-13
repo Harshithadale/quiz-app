@@ -45,16 +45,22 @@
         <h2>Welcome to the Quiz</h2>
         <div>
           <h4>Please enter your name</h4>
-          <input type="text" placeholder="Your Name" id="userName"/>
+          <input type="text" placeholder="Your Name" id="userName" />
         </div>
         <button id="startBtn">Start Quiz</button>
       </div>
     </div>
     <div id="questionsPage">
+      <div id="myModal">
+        <div id="modalContent">
+          <p>Please save the answer to take it into evaluation.</p>
+          <button onclick="closeModal()">OK</button>
+        </div>
+      </div>
       <h3 id="wishesMessage"></h3>
       <div>
         <p id="question">What is the derivative of sin(x)?</p>
-        <div id="options" >
+        <div id="options">
           <div id="mcq">
             <p class="mcq-option">cos(x)</p>
             <p class="mcq-option">cos(x)</p>
@@ -63,37 +69,40 @@
           </div>
           <div id="true_false">
             <div class="radio">
-              <input type="radio" name="bool" id="true" value ="true"/>
+              <input type="radio" name="bool" id="true" value="true" />
               <label for="true">true</label>
             </div>
             <div class="radio">
-              <input type="radio" name="bool" id="false" value ="false"/>
+              <input type="radio" name="bool" id="false" value="false" />
               <label for="false">false</label>
             </div>
           </div>
           <div id="fill_in_the_blank">
-            <input type="text" class="fill-in-blanks-inp" id="fill-in-blanks-inp"/>
+            <input
+              type="text"
+              class="fill-in-blanks-inp"
+              id="fill-in-blanks-inp"
+            />
           </div>
           <div id="matching">
             <div>
               <p class="match-option-left">cos(x)</p>
-                <p class="match-option-left">cos(x)</p>
-                <p class="match-option-left">cos(x)</p>
-                <p class="match-option-left">cos(x)</p>
+              <p class="match-option-left">cos(x)</p>
+              <p class="match-option-left">cos(x)</p>
+              <p class="match-option-left">cos(x)</p>
             </div>
             <div>
-              <input type="text" class="match-inp" maxlength="1"/>
-              <input type="text" class="match-inp" maxlength="1"/>
-              <input type="text" class="match-inp" maxlength="1"/>
-              <input type="text" class="match-inp" maxlength="1"/>
+              <input type="text" class="match-inp" maxlength="1" />
+              <input type="text" class="match-inp" maxlength="1" />
+              <input type="text" class="match-inp" maxlength="1" />
+              <input type="text" class="match-inp" maxlength="1" />
             </div>
             <div>
               <p class="match-option-right">cos(x)</p>
-                <p class="match-option-right">cos(x)</p>
-                <p class="match-option-right">cos(x)</p>
-                <p class="match-option-right">cos(x)</p>
+              <p class="match-option-right">cos(x)</p>
+              <p class="match-option-right">cos(x)</p>
+              <p class="match-option-right">cos(x)</p>
             </div>
-            
           </div>
         </div>
 
@@ -103,12 +112,16 @@
         </div>
       </div>
     </div>
-     <div id="finalScoreContainer">
-          <h3>Thank you for taking the quiz</h3>
-          <p>We appreciate your participation. Hope you enjoyed the experience and learned something new. Keep challenging yourself and growing your knowledge every day!</p>
-          <p id="score"></p>
-          <button onclick ="restartFunction()">Try Again and Do Better!</button>
-      </div>
+    <div id="finalScoreContainer">
+      <h3>Thank you for taking the quiz</h3>
+      <p>
+        We appreciate your participation. Hope you enjoyed the experience and
+        learned something new. Keep challenging yourself and growing your
+        knowledge every day!
+      </p>
+      <p id="score"></p>
+      <button onclick="restartFunction()">Try Again and Do Better!</button>
+    </div>
     <footer>Built with ❤️ by Harshitha | &copy; 2025 Quiz App</footer>
     <script src="script.js"></script>
   </body>

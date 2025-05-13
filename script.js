@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (userName.value == "") {
         alert("Please Enter Name Before Starting Quiz");
       } else {
+        openModal()
         userDetailSection.style.display = "none";
         questionsPage.style.display = "flex";
         displayQuestions(index);
@@ -195,7 +196,13 @@ document.addEventListener("DOMContentLoaded", function () {
           }
     }
   }
+    function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
 });
 function restartFunction(){
   location.reload()
 }
+ function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
