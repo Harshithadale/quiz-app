@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div id="background-container">
+      <h1 id="main-head">Test Your Knowledge with Our Quiz App</h1>
+      <div id="category-section">
+        <div class="section" data-section="0">
+          <img src="./assets/matchs-background.jpg" />
+          <h3>Mathematics</h3>
+        </div>
+        <div class="section" data-section="1">
+          <img src="./assets/history-image.jpg" />
+          <h3>Indian History</h3>
+        </div>
+        <div class="section" data-section="2">
+          <img src="./assets/science-image.png" />
+          <h3>Science</h3>
+        </div>
+        <div class="section" data-section="3">
+          <img src="./assets/gk-image.png" />
+          <h3>General Knowledge</h3>
+        </div>
+      </div>
+      <div class="fun-fact">
+        <h3>Did You Know?</h3>
+        <p>
+          Honey never spoils. Archaeologists have found pots of honey in ancient
+          Egyptian tombs that are over 3000 years old and still edible!
+        </p>
+      </div>
+      <div id="user-details-section">
+        <h2>Welcome to the Quiz</h2>
+        <div>
+          <h4>Please enter your name</h4>
+          <input type="text" placeholder="Your Name" id="userName"/>
+        </div>
+        <button id="startBtn">Start Quiz</button>
+      </div>
+    </div>
+    <div id="questionsPage">
+      <h3 id="wishesMessage"></h3>
+      <div>
+        <p id="question">What is the derivative of sin(x)?</p>
+        <div id="options" >
+          <div id="mcq">
+            <p class="mcq-option">cos(x)</p>
+            <p class="mcq-option">cos(x)</p>
+            <p class="mcq-option">cos(x)</p>
+            <p class="mcq-option">cos(x)</p>
+          </div>
+          <div id="true_false">
+            <div class="radio">
+              <input type="radio" name="bool" id="true" value ="true"/>
+              <label for="true">true</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="bool" id="false" value ="false"/>
+              <label for="false">false</label>
+            </div>
+          </div>
+          <div id="fill_in_the_blank">
+            <input type="text" class="fill-in-blanks-inp" id="fill-in-blanks-inp"/>
+          </div>
+          <div id="matching">
+            <div>
+              <p class="match-option-left">cos(x)</p>
+                <p class="match-option-left">cos(x)</p>
+                <p class="match-option-left">cos(x)</p>
+                <p class="match-option-left">cos(x)</p>
+            </div>
+            <div>
+              <input type="text" class="match-inp" maxlength="1"/>
+              <input type="text" class="match-inp" maxlength="1"/>
+              <input type="text" class="match-inp" maxlength="1"/>
+              <input type="text" class="match-inp" maxlength="1"/>
+            </div>
+            <div>
+              <p class="match-option-right">cos(x)</p>
+                <p class="match-option-right">cos(x)</p>
+                <p class="match-option-right">cos(x)</p>
+                <p class="match-option-right">cos(x)</p>
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="buttons">
+          <button id="saveBtn">Save</button>
+          <button id="nextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+     <div id="finalScoreContainer">
+          <h3>Thank you for taking the quiz</h3>
+          <p>We appreciate your participation. Hope you enjoyed the experience and learned something new. Keep challenging yourself and growing your knowledge every day!</p>
+          <p id="score"></p>
+          <button onclick ="restartFunction()">Try Again and Do Better!/button>
+      </div>
+    <footer>Built with ❤️ by Harshitha | &copy; 2025 Quiz App</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
