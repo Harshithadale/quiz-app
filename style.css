@@ -169,6 +169,7 @@ footer {
   width:75%;
   height:600px;
   text-align: center;
+  background-color: aqua;
 
 }
 #wishesMessage{
@@ -193,13 +194,15 @@ footer {
 #mcq{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .mcq-option{
   background-color: rgba(2, 7, 25, 0.5);
   margin: 10px;
   padding:10px;
-  min-width: 200px;
-  text-align: justify;
+  min-width: 250px;
+  text-align: center;
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgb(16, 15, 13);
   transition: box-shadow 2ms ease;
@@ -242,12 +245,12 @@ footer {
 
 #buttons{
   display: flex;
-  justify-content:center;
-  width: 75%;
- 
+  justify-content:space-around;
+  width: 100%;
+
 }
 #buttons>button{
-  padding:9px;
+  padding: 7px;
   width:80px;
   background-color:rgba(36, 78, 206, 0.5);
   color: aliceblue;
@@ -255,7 +258,6 @@ footer {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 0px 10px rgba(36, 78, 206, 0.5);
-  margin-left: 50px;
 }
 #buttons>button:hover{
   box-shadow: 0px 0px 10px rgba(255, 255, 255);
